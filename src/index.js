@@ -1,8 +1,9 @@
 import RinkDisplay from './rinkdisplay';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AudioPlayer from './audioplayer';
 
 ReactDOM.render(
-  <RinkDisplay />,
+  <div><RinkDisplay /><AudioPlayer /></div>,
   document.body
 );
