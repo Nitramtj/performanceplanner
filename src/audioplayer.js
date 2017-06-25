@@ -13,8 +13,13 @@ catch(e) {
 }
 
 const playerStyle = {
-  width: '500px',
-  backgroundColor: 'red'
+  flex: '1 1 auto',
+  // backgroundColor: 'grey',
+  borderTop: '2px solid black',
+  // boxSizing: 'border-box',
+
+  height: 100,
+  maxHeight: 200
 };
 
 function onDragOver(ev) {
@@ -41,6 +46,6 @@ function onDrop(ev) {
 
 export default class AudioPlayer extends React.Component {
   render() {
-    return <div style={playerStyle} onDragOver={onDragOver} onDrop={onDrop}>Audio Player</div>;
+    return <div id="zzz" style={playerStyle} onDragOver={onDragOver} onDrop={onDrop}></div>;
   }
 }
